@@ -1,6 +1,7 @@
 
 // With an interval <= 14, the light appears still
 const int INTERVAL = 12;
+const int OUTPUT_PIN = 13;
 
 void setup() {
   // put your setup code here, to run once:
@@ -9,8 +10,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(13, HIGH);
+  digitalWrite(OUTPUT_PIN, HIGH);
   delay(INTERVAL);
-  digitalWrite(13, LOW);
+  digitalWrite(OUTPUT_PIN, LOW);
   delay(INTERVAL);
 }
